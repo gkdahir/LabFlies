@@ -1,19 +1,26 @@
 <!DOCTYPE html>
-<html>
 <head>
-<meta charset="UTF-8" />
-<title>Lab 2-7</title>
+    <meta charset="UTF-8" />
+    <title>Example: JavaScript Mathematical Precedence</title>
 </head>
+<html>
+    <body>
+        <h3>CIW JavaScript Specialist</h3>
+        <hr />
+        <script type="text/javascript">
+            //<!--
 
-<body>
-<h3>CIW JavaScript Specialist</h3>
-<hr />
-<script type="text/javascript">
-<!--
+            /******************************************/
+            /*now let's do mathematical precedence */
+            /******************************************/
+            var a = 5;
+            var b = 4;
+            var c = 3;
+            var d = 2;
+            var e = 1;
 
-
-//-->
-</script>
-
-</body>
+            var f = a+(b+c)*(d/e);
+            alert("4 + 9 = " + f.toFixed(2));
+        </script>
+    </body>
 </html>
