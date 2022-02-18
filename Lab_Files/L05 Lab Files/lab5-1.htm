@@ -13,7 +13,7 @@
   
 function checkGrade(form) {
   var myGrade = form.myselect.options[form.myselect.selectedIndex].text; 
- 
+
 /*****************************************************
   Create an if statement. As the condition for the if
   statement, test the myGrade variable for a value of 
@@ -21,10 +21,16 @@ function checkGrade(form) {
   to 91, output an alert that informs the user that 
   their grade is an A.
 *****************************************************/
- 
- 
- 
- 
+
+  if(myGrade >= 91) {
+    alert("Your grade is an A.");
+  }
+  else if(myGrade >= 81 && myGrade <= 90) { 
+    alert("Your grade is a B.");
+  }
+  else{
+    alert("Your grade is a C or lower.");
+  }
  
  
  
