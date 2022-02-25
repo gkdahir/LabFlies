@@ -1,40 +1,37 @@
+
 <!DOCTYPE html>
 <html>
-<head>
-<title>Lab 6-6</title> 
+    <head>
+        <title>Lab 6-6</title>
 
-<script type="text/javascript">
-<!--
+        <script type="text/javascript">
+            //<!--
 
-function openWindow(){
-var info="";
+            function openWindow() {
+              var info="";
 
-  info += "Welcome, " +               ;         //Add appCodeName here
-  info += " user!\nYou are using the "; 
-  info +=      + " browser,\nversion ";        //Add appName here
-  info +=      + ".\nYour user agent ";       //Add appVersion here
-  info += "information is " +         ;          //Add userAgent here
+              info += "Welcome, Mozilla" ; //Add appCodeName here
+              info += " user!\nYou are using the Netscape browser";
+              info += + " Safari,\nversion 5.0"; //Add appName here
+              info += + ".\nYour user agent "; //Add appVersion here
+              info += "information is Mozilla" ; //Add userAgent here
 
-  alert(info);
-}
+              alert(info);
+            }
+            //-->
+        </script>
+    </head>
 
-//-->
-</script>
-</head>
+    <body>
+        <h3>CIW JavaScript Specialist</h3>
+        <hr />
 
-<body>
-<h3>CIW JavaScript Specialist</h3>
-<hr />
+        <script type="text/javascript">
+          document.write("<p>The property <strong><em>navigator.userAgent</em></strong> " + "returns:<br /><strong><font color='#FF0000'>" + navigator.userAgent + "</font></strong></p>");
+      </script>
 
-<script type="text/javascript">
-
-      //Add userAgent here to write to browser window
-
-</script>
-
-<form name="myForm">
-<input type="button" name="buttonClick" value="Click for More Browser Info" onClick="openWindow()" />
-</form>
-
-</body>
+        <form name="myForm">
+            <input type="button" name="buttonClick" value="Click for More Browser Information" onclick="openWindow()" />
+        </form>
+    </body>
 </html>
