@@ -18,37 +18,37 @@
   
       // Instantiate 3 instances of employeeObject
   // Important - Start your array index numbers with 1
-      var employees = new Array();
-  employees[0] = "Select Employee";
-      ("Mai Li", "Sales", 551);
-      ("Maria Alvarez", "Human Resources", 441);
-      ("Tom Smith", "Marketing", 331);
+  var employees = new Array();
+    employees[0] = "Select Employee";
+    employees[1] = new employeeObject("Mai Li", "Sales", 551);
+    employees[2] = new employeeObject("Maria Alvarez", "Human Resources", 441);
+    employees[3] = new employeeObject("Tom Smith", "Marketing", 331);
+	employeeObject.employed = "Yes";
   
-  len = employees.length;
+var len = employees.length;
   
+function showEmployee() {
+      var info = "";
+    info += "Employee: " + this.name + "\n";
+      info += "Department: " + this.department +  "\n";
+    info += "Extension: " + this.extension + "\n";
+	    info += "Employed: " + this.employed;
+      alert(info);
+    }
+
     function showEmployee() {
       var info = "";
   // Complete the showEmployee() function
-    for (var i = 1; i < len; i++) {
+  for (var i = 1; i < len; i++) {
         info += "Employee: " + employees[i].name + "\n";
         info += "Department: " + employees[i].department +  "\n";
-        info += "Extension: " + employees[i].extension + "\n";
+      info += "Extension: " + employees[i].extension + "\n";
 	      info += "Employed: " + employees[i].employed + "\n\n";
-        alert(info);
-      }
-    } 
-
-    function showAllEmployees() {
-        var info = "";
-    for (var i = 1; i < len; i++) {
-        info += "Employee: " + employees[i].name + "\n";
-        info += "Department: " + employees[i].department +  "\n";
-    info += "Extension: " + employees[i].extension + "\n\n";
       }
     
     alert(info);
     }
-
+    
 //-->
 </script>
 </head>
