@@ -57,22 +57,24 @@ function showEmployee() {
 <hr />
 <form name="empForm" id="empForm">
 <strong>Select name to view information:</strong> 
-<select name="empName" onchange="employees[this.selectedIndex].showEmployee();this.selectedIndex=0;">
-<script type="text/javascript">
+<select name="empName" onchange="showEmployee.call(employees[this.selectedIndex]); this.selectedIndex=0;">
+<script language="JavaScript" type="text/javascript">
 //<!--
 
   for (var i = 0; i < len; i++) {
-    if(i == 0) document.write("<option>" + employees[i]) + "</option>";
-    else document.write("<option>" + employees[i].name) + "</option>";
+    if(i == 0)
+    document.write("<option>" + employees[i]) + "</option>";
+    else
+      document.write("<option>" + employees[i].name) + "</option>";
   }
-  
+
 //-->
 </script>
 </select>
 <p>
-<input type="button" value="Show All Employees" onclick=
-"showAllEmployees();" />
+<input type="button" value="Show All Employees" onclick="showAllEmployees();" />
 </p>
 </form>
 </body>
 </html>
+
