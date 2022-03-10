@@ -8,21 +8,23 @@
 //<!--
 
 // create a class here
-class names{
-    constructor(brands){
-        this.brands = brands;
-    }
-    display(){
-        document.write('The name of ' + this.brands + 'brand')
+var devibrand = "Computer of wealth"
+var deviname = "Absolution"
+
+class Device{
+    constructor(names, brands){
+        this.deviname = names;
+        this.devibrand = brands;
+        this.display = display(); {return "The name of this device is" + this.deviname+ "and it's brand is" + this.devibrand}
     }
 }
-class Sentences extends names{
-    
+function display();{
+    alert("The name of this dievis is" + this.deviname+ "and it's brand is" + this.devibrand)
 }
 //-->
 </script>
 </head>
-<body onload="dev1.display()">
+<body onclick="dev1.display()">
 <h3>CIW JavaScript Specialist</h3>
 <hr />
 
