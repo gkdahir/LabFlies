@@ -8,15 +8,15 @@
 //<!--
     
 // write your code here
-function* integer() {
-  var id = 0;
+function integer() {
+  var num = 0;
   while(true)
-  yield id++;
+  yield num++;
 }
 var get = integer();
 console.log(gen.next().value);
 console.log(gen.next().value);
-[return_value] = yield [expression];
+[return_value] = yield [num];
 //-->
 </script>
 </head>
