@@ -8,11 +8,15 @@
 //<!--
     
 // write your code here
-var example = ["Value1", "Value2", "Value3", "Value4", "Value5"];
-var obj2 = example.keys();
-for (let x of obj2) {
- console.log(x);
+function* integer() {
+  var id = 0;
+  while(true)
+  yield id++;
 }
+var get = integer();
+console.log(gen.next().value);
+console.log(gen.next().value);
+[return_value] = yield [expression];
 //-->
 </script>
 </head>
