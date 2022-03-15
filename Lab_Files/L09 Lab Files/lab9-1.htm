@@ -5,7 +5,7 @@
 <title>Lab 9-1</title>
 
 <script type="text/javascript">
-<!--
+//<!--
 function changeButton()
 {
   if(document.getElementById('radiobuttonWebdev').checked === true)
@@ -20,9 +20,27 @@ function changeButton()
 	var header = document.getElementById('radiobuttonWebdev').value.innerHTML = "Uncle Sam!";
 	alert("Hello " + header);
   }
+  if(document.getElementById('a').checked === true)
+  {
+	radioButton = document.getElementById('a').value;
+	var header = document.getElementById('a').value.innerHTML = "CIW!";
+	alert("Hello " + header);
+  }
+  if(document.getElementById('b').checked === true)
+  {
+	radioButton = document.getElementById('b').value;
+	var header = document.getElementById('b').value.innerHTML = "Classroom!";
+	alert("Hello " + header);
+  }
+  if(document.getElementById('c').checked === true)
+  {
+	radioButton = document.getElementById('c').value;
+	var header = document.getElementById('c').value.innerHTML = "CART!";
+	alert("Hello " + header);
+  }
   getTest();
 }
--->
+//-->
 </script>
 </head>
 
@@ -39,7 +57,7 @@ function changeButton()
 
 
 <script type="text/javascript">
-<!--
+//<!--
 function getTest()
 {
   document.write("<h3>CIW JavaScript Specialist</h3>");
@@ -49,13 +67,24 @@ function getTest()
   {
 	document.write("<p>Here's a great site for Web developers:</p><a href=http://www.CIWcertified.com/>CIW Certified</a>");
   }
-	
   if(radioButton == "Government")
   {
 	document.write("<p>Here's a great site if you're interested in U.S. government:</p><a href=http://www.whitehouse.gov/>The White House</a>");
   }
+  if(radioButton == "A")
+  {
+    document.write("<p>Here's a great site for future coders</p><a href=https://ciw.ucertify.com/?func=ebook&chapter_no=9#top/> CIW</a>")
+  }
+  if(radioButton == "B")
+  {
+    document.write("<p>Here's a great site for future students</p><a href=https://classroom.google.com/c/MzgwNTU1MTc2MzA4/> Classroom</a>")
+  }
+  if(radioButton == "C")
+  {
+    document.write("<p>Here's a great site for CART students:</p><a href=https://cart.org/> Cart</a>")
+  }
 }
--->
+//-->
 </script>
 
 <p>
