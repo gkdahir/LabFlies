@@ -42,5 +42,18 @@ function loadData(URL)
 	xmlReq.send (null);
 }
 
-
-
+xmlReq.onreadystatechange = function () {
+    switch (xmlReq.readyState) {
+        case 0: // Uninitialized
+            break;
+        case 1: // Loading
+            break;
+        case 2: // Loaded
+            break;
+        case 3: // Interactive
+            break;
+        case 4: // Done!
+    }
+};
+loadData(" https://s3.amazonaws.com/jigyaasa_content_static/1d0-735/Data1.txt");
+loadData("path/to/file/filename.txt");

@@ -9,6 +9,12 @@ function ChangeData(str)
 {
 	document.getElementById('MyID').innerHTML = str;
 }
+
+function loadScript(scriptURL) {
+    var newScript = document.createElement("script");
+    newScript.src = scriptURL;
+    document.body.appendChild(newScript);
+}
 </script>
 </head>
 
