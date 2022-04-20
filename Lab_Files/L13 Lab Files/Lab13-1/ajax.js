@@ -13,8 +13,6 @@ function loadData(URL)
 	 else  xmlReq = new XMLHttpRequest();
 
 	if(xmlReq==null) return; // Failed to create the request
-	
-
 	xmlReq.open("GET", URL, true);
 // Anonymous function to handle changed request states
 	xmlReq.onreadystatechange = function()
