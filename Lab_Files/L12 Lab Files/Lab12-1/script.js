@@ -14,3 +14,8 @@
 			ourText.css('fontSize', finalNum + stringEnding);
 		});
 	});
+	if (this.id == "large") {
+		finalNum *= 1.2;
+	} else if (this.id == "small") {
+		finalNum /= 1.2;
+	}
