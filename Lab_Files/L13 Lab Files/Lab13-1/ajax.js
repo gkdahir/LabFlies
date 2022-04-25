@@ -1,5 +1,4 @@
-function loadScript(scriptURL)
-{
+function loadScript(scriptURL){
 	var newScript = document.createElement("script");
 	newScript.src = scriptURL;
 	document.body.appendChild(newScript);
